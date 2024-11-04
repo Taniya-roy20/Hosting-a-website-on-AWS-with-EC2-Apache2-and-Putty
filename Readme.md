@@ -1,6 +1,6 @@
-Hosting a Website on AWS with EC2, Apache2, and PuTTY
+# Hosting a Website on AWS with EC2, Apache2, and PuTTY
 
-Step 1: Launch a Linux EC2 Instance (Ubuntu)
+**Step 1: Launch a Linux EC2 Instance (Ubuntu)**
 Login to AWS Console:
 
 Go to AWS Console and log in.
@@ -23,7 +23,7 @@ Key Pair:
 Create a new key pair and download the .ppk file.
 Launch the Instance.
 <br>
-Step 2: Connect to EC2 Using PuTTY
+**Step 2:** Connect to EC2 Using PuTTY
 Open PuTTY.
 
 Enter the Public IP of EC2:
@@ -37,12 +37,12 @@ Click Browse and select the .ppk file.
 Open the Connection:
 
 Click Open and use ubuntu as the username when prompted.
-Step 3: Install Apache2 on the EC2 Instance
+**Step 3: Install Apache2 on the EC2 Instance**
 Update the package list and install Apache2:
 
 sudo apt update
 sudo apt install apache2 -y
-Step 4: Delete Default index.html and Create a New One
+**Step 4: Delete Default index.html and Create a New One**
 Navigate to the Apache directory: cd /var/www/html
 Delete the default index.html: sudo rm index.html
 Create a new HTML file: sudo vi index.html
